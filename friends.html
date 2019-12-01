@@ -15,8 +15,13 @@
 
     </div>
     <script type="text/javascript">
-    // https://api.bitmoji.com/content/templates?app_name=bitmoji
-        var searchFilter = function () {}
+        // latest avatars:
+        // https://api.bitmoji.com/content/templates?app_name=bitmoji
+        // replace api.json
+        //
+        // largest size with ?scale=2
+
+        var searchFilter = function () { }
 
         function getUrlParams(prop) {
             var params = {};
@@ -34,7 +39,7 @@
         $(function () {
             var firstID = getUrlParams("firstid")
             var secondID = getUrlParams("secondid")
-            if(firstID == "" || secondID == ""){
+            if (firstID == "" || secondID == "") {
                 alert("You must assign both a url param for \"firstid\" and \"secondid\"")
                 return false;
             }
